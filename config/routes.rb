@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   get("/", { :controller => "welcome", :action => "view" })
 
-  get("/sign-in", { :controller => "welcome", :action => "sign_in"})
+  get("/sign_in", { :controller => "welcome", :action => "sign_in"})
+
+  get("/sign_up", { :controller => "welcome", :action => "sign_up"})
 
   get("/dashboard", { :controller => "dashboard", :action => "view"})
 
